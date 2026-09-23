@@ -1,0 +1,558 @@
+{
+  "file_analyzed": "C:\\Users\\dell\\Desktop\\data\\data\\sample\\terra_land_acquisition_synthetic.csv",
+  "total_rows": 2505,
+  "total_columns": 27,
+  "duplicate_rows": 5,
+  "columns_profile": {
+    "project_id": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_count": 260,
+      "leakage_flag": false
+    },
+    "parcel_id": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_count": 2500,
+      "leakage_flag": false
+    },
+    "project_name": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_count": 190,
+      "leakage_flag": false
+    },
+    "project_type": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_count": 19,
+      "leakage_flag": false
+    },
+    "state": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_count": 10,
+      "leakage_flag": false
+    },
+    "district": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_count": 72,
+      "leakage_flag": false
+    },
+    "land_area_acres": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_count": 2146,
+      "leakage_flag": false
+    },
+    "affected_families": {
+      "dtype": "float64",
+      "missing_count": 20,
+      "missing_percentage": 0.8,
+      "unique_count": 307,
+      "leakage_flag": false
+    },
+    "ownership_complexity": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_count": 11,
+      "leakage_flag": false
+    },
+    "documentation_completeness": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_count": 81,
+      "leakage_flag": false
+    },
+    "legal_dispute": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_count": 2,
+      "leakage_flag": false
+    },
+    "compensation_status": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_count": 4,
+      "leakage_flag": false
+    },
+    "compensation_pending_days": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_count": 461,
+      "leakage_flag": false
+    },
+    "notification_status": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_count": 5,
+      "leakage_flag": false
+    },
+    "approval_status": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_count": 5,
+      "leakage_flag": false
+    },
+    "approval_processing_days": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_count": 234,
+      "leakage_flag": false
+    },
+    "rehabilitation_progress": {
+      "dtype": "float64",
+      "missing_count": 25,
+      "missing_percentage": 1.0,
+      "unique_count": 93,
+      "leakage_flag": false
+    },
+    "possession_status": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_count": 5,
+      "leakage_flag": false
+    },
+    "stakeholder_responsiveness": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_count": 4,
+      "leakage_flag": false
+    },
+    "administrative_processing_days": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_count": 388,
+      "leakage_flag": false
+    },
+    "historical_delay_rate": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_count": 690,
+      "leakage_flag": false
+    },
+    "planned_completion_date": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_count": 250,
+      "leakage_flag": false
+    },
+    "actual_completion_date": {
+      "dtype": "str",
+      "missing_count": 399,
+      "missing_percentage": 15.93,
+      "unique_count": 1244,
+      "leakage_flag": true
+    },
+    "delay_days": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_count": 562,
+      "leakage_flag": true
+    },
+    "delay_status": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_count": 2,
+      "leakage_flag": true
+    },
+    "latitude": {
+      "dtype": "float64",
+      "missing_count": 15,
+      "missing_percentage": 0.6,
+      "unique_count": 2485,
+      "leakage_flag": false
+    },
+    "longitude": {
+      "dtype": "float64",
+      "missing_count": 15,
+      "missing_percentage": 0.6,
+      "unique_count": 2484,
+      "leakage_flag": false
+    }
+  },
+  "numerical_stats": {
+    "land_area_acres": {
+      "min": 5.0,
+      "q25": 19.34,
+      "median": 33.04,
+      "q75": 56.2,
+      "max": 401.07,
+      "mean": 45.5269,
+      "std": 41.4595,
+      "skew": 2.7212
+    },
+    "affected_families": {
+      "min": 2.0,
+      "q25": 26.0,
+      "median": 49.0,
+      "q75": 93.0,
+      "max": 1396.0,
+      "mean": 74.8286,
+      "std": 85.471,
+      "skew": 4.4579
+    },
+    "documentation_completeness": {
+      "min": 0.15,
+      "q25": 0.58,
+      "median": 0.71,
+      "q75": 0.83,
+      "max": 0.99,
+      "mean": 0.6964,
+      "std": 0.1632,
+      "skew": -0.4971
+    },
+    "legal_dispute": {
+      "min": 0.0,
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 1.0,
+      "max": 1.0,
+      "mean": 0.3381,
+      "std": 0.4732,
+      "skew": 0.6848
+    },
+    "compensation_pending_days": {
+      "min": 0.0,
+      "q25": 0.0,
+      "median": 112.0,
+      "q75": 218.0,
+      "max": 648.0,
+      "mean": 140.3665,
+      "std": 149.3362,
+      "skew": 1.2117
+    },
+    "approval_processing_days": {
+      "min": 15.0,
+      "q25": 50.0,
+      "median": 105.0,
+      "q75": 153.0,
+      "max": 273.0,
+      "mean": 103.6255,
+      "std": 60.8966,
+      "skew": 0.1387
+    },
+    "rehabilitation_progress": {
+      "min": 0.02,
+      "q25": 0.45,
+      "median": 0.59,
+      "q75": 0.73,
+      "max": 0.98,
+      "mean": 0.5833,
+      "std": 0.1863,
+      "skew": -0.1794
+    },
+    "administrative_processing_days": {
+      "min": 30.0,
+      "q25": 153.0,
+      "median": 210.0,
+      "q75": 271.0,
+      "max": 523.0,
+      "mean": 211.8012,
+      "std": 85.783,
+      "skew": 0.0929
+    },
+    "historical_delay_rate": {
+      "min": 0.08,
+      "q25": 0.297,
+      "median": 0.422,
+      "q75": 0.562,
+      "max": 0.85,
+      "mean": 0.4329,
+      "std": 0.1772,
+      "skew": 0.1806
+    },
+    "delay_days": {
+      "min": 0.0,
+      "q25": 41.0,
+      "median": 195.0,
+      "q75": 345.0,
+      "max": 720.0,
+      "mean": 211.677,
+      "std": 169.616,
+      "skew": 0.4546
+    },
+    "delay_status": {
+      "min": 0.0,
+      "q25": 0.0,
+      "median": 1.0,
+      "q75": 1.0,
+      "max": 1.0,
+      "mean": 0.6846,
+      "std": 0.4648,
+      "skew": -0.7952
+    },
+    "latitude": {
+      "min": 9.634,
+      "q25": 17.6183,
+      "median": 22.6798,
+      "q75": 26.3235,
+      "max": 30.4372,
+      "mean": 21.8777,
+      "std": 5.5407,
+      "skew": -0.4595
+    },
+    "longitude": {
+      "min": 69.0907,
+      "q25": 75.3462,
+      "median": 77.1848,
+      "q75": 79.8725,
+      "max": 86.6942,
+      "mean": 77.5093,
+      "std": 3.8983,
+      "skew": 0.1941
+    }
+  },
+  "categorical_distributions": {
+    "project_id": {
+      "cardinality": 260,
+      "top_categories": {
+        "PRJ-1005": 21,
+        "PRJ-1040": 19,
+        "PRJ-1024": 18,
+        "PRJ-1070": 18,
+        "PRJ-1117": 17
+      }
+    },
+    "parcel_id": {
+      "cardinality": 2500,
+      "top_categories": {
+        "PCL-10010": 2,
+        "PCL-10149": 2,
+        "PCL-10195": 2,
+        "PCL-11751": 2,
+        "PCL-12152": 2
+      }
+    },
+    "project_name": {
+      "cardinality": 190,
+      "top_categories": {
+        "Command Area Distribution Network 2": 67,
+        "Command Area Distribution Network 1": 62,
+        "Bharatmala Economic Highway Ring 2": 52,
+        "Wind-Solar Hybrid Energy Grid 4": 39,
+        "Bharatmala Economic Highway Ring 1": 35
+      }
+    },
+    "project_type": {
+      "cardinality": 13,
+      "top_categories": {
+        "Irrigation / Water Canal": 507,
+        "Highway / Expressway": 369,
+        "Renewable / Solar Park": 363,
+        "Industrial Corridor / SEZ": 363,
+        "Railway & Freight Corridor": 317
+      }
+    },
+    "state": {
+      "cardinality": 10,
+      "top_categories": {
+        "Rajasthan": 335,
+        "Haryana": 332,
+        "Madhya Pradesh": 289,
+        "Gujarat": 270,
+        "Andhra Pradesh": 250
+      }
+    },
+    "district": {
+      "cardinality": 62,
+      "top_categories": {
+        "Udaipur": 90,
+        "Jaipur": 87,
+        "Guntur": 85,
+        "Angul": 80,
+        "Gwalior": 77
+      }
+    },
+    "ownership_complexity": {
+      "cardinality": 8,
+      "top_categories": {
+        "Medium": 943,
+        "Low": 816,
+        "High": 577,
+        "Very High": 156,
+        "medium": 5
+      }
+    },
+    "compensation_status": {
+      "cardinality": 4,
+      "top_categories": {
+        "Fully Disbursed": 806,
+        "Partially Disbursed": 745,
+        "Pending Disbursal": 639,
+        "Disputed in Escrow": 315
+      }
+    },
+    "notification_status": {
+      "cardinality": 5,
+      "top_categories": {
+        "Possession Taken (Sec 38)": 560,
+        "Preliminary Notification (Sec 11)": 502,
+        "Declaration Published (Sec 19)": 483,
+        "Notification Pending": 480,
+        "Award Declared (Sec 23)": 480
+      }
+    },
+    "approval_status": {
+      "cardinality": 5,
+      "top_categories": {
+        "Approved": 1137,
+        "Under Scrutiny": 636,
+        "Conditional Clearance": 361,
+        "Pending Environmental Clearance": 248,
+        "Resubmission Required": 123
+      }
+    },
+    "possession_status": {
+      "cardinality": 5,
+      "top_categories": {
+        "Substantial Possession (>70%)": 591,
+        "Full Possession": 563,
+        "Partial Possession (30-70%)": 554,
+        "Initial Stage (<30%)": 451,
+        "Contested / Encroached": 346
+      }
+    },
+    "stakeholder_responsiveness": {
+      "cardinality": 4,
+      "top_categories": {
+        "High / Cooperative": 911,
+        "Moderate": 881,
+        "Low / Resistant": 488,
+        "Hostile / Legal Injunction": 225
+      }
+    }
+  },
+  "date_ranges": {
+    "planned_completion_date": {
+      "min_date": "2022-04-09",
+      "max_date": "2027-09-08",
+      "valid_records": 2505,
+      "missing_or_blank": 0
+    },
+    "actual_completion_date": {
+      "min_date": "2022-04-09",
+      "max_date": "2029-02-15",
+      "valid_records": 2106,
+      "missing_or_blank": 399
+    }
+  },
+  "outlier_summary": {
+    "land_area_acres": {
+      "outlier_count": 162,
+      "outlier_percentage": 6.47,
+      "lower_bound": -35.95,
+      "upper_bound": 111.49
+    },
+    "affected_families": {
+      "outlier_count": 163,
+      "outlier_percentage": 6.51,
+      "lower_bound": -74.5,
+      "upper_bound": 193.5
+    },
+    "documentation_completeness": {
+      "outlier_count": 5,
+      "outlier_percentage": 0.2,
+      "lower_bound": 0.2,
+      "upper_bound": 1.21
+    },
+    "legal_dispute": {
+      "outlier_count": 0,
+      "outlier_percentage": 0.0,
+      "lower_bound": -1.5,
+      "upper_bound": 2.5
+    },
+    "compensation_pending_days": {
+      "outlier_count": 73,
+      "outlier_percentage": 2.91,
+      "lower_bound": -327.0,
+      "upper_bound": 545.0
+    },
+    "approval_processing_days": {
+      "outlier_count": 0,
+      "outlier_percentage": 0.0,
+      "lower_bound": -104.5,
+      "upper_bound": 307.5
+    },
+    "rehabilitation_progress": {
+      "outlier_count": 1,
+      "outlier_percentage": 0.04,
+      "lower_bound": 0.03,
+      "upper_bound": 1.15
+    },
+    "administrative_processing_days": {
+      "outlier_count": 7,
+      "outlier_percentage": 0.28,
+      "lower_bound": -24.0,
+      "upper_bound": 448.0
+    },
+    "historical_delay_rate": {
+      "outlier_count": 0,
+      "outlier_percentage": 0.0,
+      "lower_bound": -0.1,
+      "upper_bound": 0.96
+    },
+    "delay_days": {
+      "outlier_count": 0,
+      "outlier_percentage": 0.0,
+      "lower_bound": -415.0,
+      "upper_bound": 801.0
+    },
+    "delay_status": {
+      "outlier_count": 0,
+      "outlier_percentage": 0.0,
+      "lower_bound": -1.5,
+      "upper_bound": 2.5
+    },
+    "latitude": {
+      "outlier_count": 0,
+      "outlier_percentage": 0.0,
+      "lower_bound": 4.56,
+      "upper_bound": 39.38
+    },
+    "longitude": {
+      "outlier_count": 3,
+      "outlier_percentage": 0.12,
+      "lower_bound": 68.56,
+      "upper_bound": 86.66
+    }
+  },
+  "target_summary": {
+    "delay_status": {
+      "counts": {
+        "1": 1715,
+        "0": 790
+      },
+      "delay_rate": 0.6846
+    },
+    "delay_days": {
+      "mean": 211.68,
+      "median": 195.0,
+      "max": 720.0,
+      "min": 0.0
+    }
+  }
+}

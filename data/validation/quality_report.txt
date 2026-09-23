@@ -1,0 +1,20 @@
+==================================================
+DATA QUALITY REPORT
+==================================================
+Rows: 2,500
+Columns: 27
+Duplicate rows: 0
+Duplicate parcel IDs: 0
+Missing critical values: 0
+Invalid coordinates: 0
+Invalid numerical values: 0
+Inconsistent categorical values: 0
+Target available: YES
+Potential leakage columns in base data: 3
+Overall status: PASS
+==================================================
+
+SYSTEM WARNINGS & LEAKAGE NOTICES:
+- [NOTICE] 3 potential leakage columns present in base storage (['actual_completion_date', 'delay_days', 'delay_status']). Must be excluded from ml_dataset.csv.
+
+==================================================

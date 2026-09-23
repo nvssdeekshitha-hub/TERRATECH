@@ -1,0 +1,5 @@
+# TerraTech Data Engineering Pipeline Requirements
+# Member 2: Data Engineering Layer
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
