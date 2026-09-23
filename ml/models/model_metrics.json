@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-09-23T22:46:06.453173",
+  "model_version": "v1.0.0",
+  "classification": {
+    "baseline_random_forest": {
+      "accuracy": 0.6817,
+      "precision": 0.6912,
+      "recall": 0.7321,
+      "f1_score": 0.711,
+      "roc_auc": 0.7286
+    },
+    "xgboost": {
+      "accuracy": 0.6817,
+      "precision": 0.7044,
+      "recall": 0.6978,
+      "f1_score": 0.7011,
+      "roc_auc": 0.7359
+    },
+    "selected_model": "Random Forest Classifier",
+    "selected_metrics": {
+      "accuracy": 0.6817,
+      "precision": 0.6912,
+      "recall": 0.7321,
+      "f1_score": 0.711,
+      "roc_auc": 0.7286
+    }
+  },
+  "regression": {
+    "baseline_random_forest": {
+      "mae": 91.41,
+      "rmse": 106.99
+    },
+    "xgboost": {
+      "mae": 89.64,
+      "rmse": 106.13
+    },
+    "selected_model": "XGBoost Regressor",
+    "selected_metrics": {
+      "mae": 89.64,
+      "rmse": 106.13
+    }
+  }
+}
