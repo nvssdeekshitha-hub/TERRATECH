@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TerraTech — Data Engineering Layer (Member 2)
 
 Welcome to the **Data Engineering & Preparation Layer** for **TerraTech** — the AI-powered predictive analytics platform for detecting and preventing land acquisition delays.
@@ -185,3 +186,7 @@ python data_pipeline/export_data.py
 | Coordinates Valid | Indian Bounds | 100% within district polygons | **PASSED** |
 | Target Available | `delay_status` | Binary (`0`/`1`), 68.6% delay rate | **PASSED** |
 | Data Leakage Guard | Complete Isolation | Zero post-outcome leakage in `ml_dataset.csv` | **PASSED** |
+=======
+# TERRATECH
+TERRATECH is a predictive analysis system that helps identify &amp; predict potential land acquisition issues before they become major project delays. It analyzes factors such as land ownership, acquisition status, compensation, legal disputes, location-related factors, and historical acquisition patterns to calculate a risk level for each land parcel.
+>>>>>>> fb1fe186b902b56121cec53ac747a9e91a02c006
